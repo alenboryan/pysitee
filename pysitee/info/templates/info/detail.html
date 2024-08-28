@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="{% static 'info/css/quiz.css' %}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Game</h1>
+        
+        <!-- Your form for displaying questions and choices -->
+        <form action="{% url 'info:vote' %}" method="post">
+            {% csrf_token %}
+            {% for question in questions %}
+                <fieldset>
+                    <legend>{{ question.question_text }}</legend>
+                    {% for choice in question.choice_set.all %}
+                        <input type="radio" name="choice" id="choice{{ choice.id }}" value="{{ choice.id }}">
+                        <label for="choice{{ choice.id }}">{{ choice.choice_text }}</label><br>
+                    {% endfor %}
+                    <input type="hidden" name="question_id" value="{{ question.id }}">
+                </fieldset>
+            {% endfor %}
+            <input type="submit" value="Vote">
+        </form>
+        
+        {% if error_message %}
+            <p class="error-message"><strong>{{ error_message }}</strong></p>
+        {% endif %}
+        
+    </div>
+</body>
+</html>
+
+

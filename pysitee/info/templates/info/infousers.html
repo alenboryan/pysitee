@@ -1,0 +1,68 @@
+{% extends 'info/layout.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info From Users</title>
+
+    <style>
+        /* Additional CSS styles */
+                  
+
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #383535;
+        }
+
+        .container {
+            width: 500px; /* Set the width of the container to 1000 pixels */
+            height: 500px; /* Set the height of the container to 600 pixels */
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            /* Additional styles */
+            color: #333; /* Change text color */
+            font-size: 16px; /* Change font size */
+            line-height: 1.6; /* Change line height */
+            border: 1px solid #ccc; /* Add border */
+        }
+
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #ffffff;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Info From Users</h1>
+<div class="container">
+    {%for i in info%}
+       <h3>{{i.title}}</h3>
+       <p>{{i.anons}}</p>
+       <p>{{i.date}}</p>
+</div>
+    {%endfor%}
+
+</body>
+</html>
+{% endblock %}

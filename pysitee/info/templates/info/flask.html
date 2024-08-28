@@ -1,0 +1,108 @@
+{% extends 'info/layout.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #383535;
+        }
+        .container {
+            width: 1000px; /* Set the width of the container to 1000 pixels */
+            height: 1500px; /* Set the height of the container to 600 pixels */
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            /* Additional styles */
+            color: #333; /* Change text color */
+            font-size: 16px; /* Change font size */
+            line-height: 1.6; /* Change line height */
+            border: 1px solid #ccc; /* Add border */
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+
+    <h2>Flask Python Framework Overview</h2>
+    <p>
+        Flask is a web framework, it’s a Python module that lets you develop web applications easily. It’s has a small and easy-to-extend core: it’s a microframework that doesn’t include an ORM (Object Relational Manager) or such features.
+    </p>
+    <p>
+        It does have many cool features like url routing, template engine. It is a WSGI web app framework.
+    </p>
+
+    <h3>What is a Web Framework?</h3>
+    <p>
+        A Web Application Framework or simply a Web Framework represents a collection of libraries and modules that enable web application developers to write applications without worrying about low-level details such as protocol, thread management, and so on.
+    </p>
+
+    <h3>What is Flask?</h3>
+    <p>
+        Flask is a web application framework written in Python. It was developed by Armin Ronacher, who led a team of international Python enthusiasts called Pocco. Flask is based on the Werkzeg WSGI toolkit and the Jinja2 template engine. Both are Pocco projects.
+    </p>
+
+    <h4>WSGI</h4>
+    <p>
+        The Web Server Gateway Interface (Web Server Gateway Interface, WSGI) has been used as a standard for Python web application development. WSGI is the specification of a common interface between web servers and web applications.
+    </p>
+
+    <h4>Werkzeug</h4>
+    <p>
+        Werkzeug is a WSGI toolkit that implements requests, response objects, and utility functions. This enables a web frame to be built on it. The Flask framework uses Werkzeg as one of its bases.
+    </p>
+
+    <h4>Jinja2</h4>
+    <p>
+        Jinja2 is a popular template engine for Python. A web template system combines a template with a specific data source to render a dynamic web page.
+    </p>
+
+    <h3>Microframework</h3>
+    <p>
+        Flask is often referred to as a microframework. It is designed to keep the core of the application simple and scalable. Instead of an abstraction layer for database support, Flask supports extensions to add such capabilities to the application.
+    </p>
+
+    <h3>Why is Flask a good web framework choice?</h3>
+    <p>
+        Unlike the Django framework, Flask is very Pythonic. It’s easy to get started with Flask, because it doesn’t have a huge learning curve.
+    </p>
+    <p>
+        On top of that it’s very explicit, which increases readability. To create the “Hello World” app, you only need a few lines of code.
+    </p>
+    <!-- Add "Hello World" code example here -->
+    <p>
+        If you want to develop on your local computer, you can do so easily. Save this program as server.py and run it with python server.py.
+    </p>
+    <!-- Add local development and online hosting instructions here -->
+    <p>
+        Flask is one of the most popular web frameworks, meaning it’s up-to-date and modern. You can easily extend its functionality. You can scale it up for complex applications.
+    </p>
+
+    </div>
+</body>
+</html>
+{% endblock %}

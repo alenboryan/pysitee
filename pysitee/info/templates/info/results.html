@@ -1,0 +1,51 @@
+{%extends 'info/layout.html'%}
+{% block content %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #444;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Results</h1>
+    {% if questions %}
+        {% for question in questions %}
+            <h2>{{ question.question_text }}</h2>
+            <ul>
+                {% for choice in question.choice_set.all %}
+                    <li>{{ choice.choice_text }} - {{ choice.votes }}</li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    {% else %}
+        <p>No questions available.</p>
+    {% endif %}
+</body>
+</html>
+{% endblock %}
+

@@ -1,0 +1,19 @@
+{% extends 'info/layout.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'info/css/info.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% if contents %}
+        {% for item in contents %}
+            <h2>Topic 1: What is Python?</h2>
+            <p>{{ item.content }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No content available.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'info/layout.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #383535;
+        }
+        .container {
+            width: 1000px; /* Set the width of the container to 1000 pixels */
+            height: 1600px; /* Set the height of the container to 600 pixels */
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            /* Additional styles */
+            color: #333; /* Change text color */
+            font-size: 16px; /* Change font size */
+            line-height: 1.6; /* Change line height */
+            border: 1px solid #ccc; /* Add border */
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>What is Pandas?</h1>
+        <p>
+            As an open-source software library built on top of Python specifically for data manipulation and analysis, Pandas offers data structure and operations for powerful, flexible, and easy-to-use data analysis and manipulation. Pandas strengthens Python by giving the popular programming language the capability to work with spreadsheet-like data enabling fast loading, aligning, manipulating, and merging, in addition to other key functions. Pandas is prized for providing highly optimized performance when back-end source code is written in C or Python.
+        </p>
+    
+        <p>
+            The name ‘Pandas’ comes from the econometrics term ‘panel data’ describing data sets that include observations over multiple time periods. The Pandas library was created as a high-level tool or building block for doing very practical real-world analysis in Python. Going forward, its creators intend Pandas to evolve into the most powerful and most flexible open-source data analysis and data manipulation tool for any programming language.
+        </p>
+    
+        <p>
+            What some have called a ‘game changer’ for analyzing data with Python, Pandas ranks among the most popular and widely used tools for so-called data wrangling, or munging. This describes a set of concepts and a methodology used when taking data from unusable or erroneous forms to the levels of structure and quality needed for modern analytics processing. Pandas excels in its ease of working with structured data formats such as tables, matrices, and time series data. It also works well with other Python scientific libraries.
+        </p>
+    
+        <h2>How Pandas Works</h2>
+        <p>
+            Included in the Pandas open-source library are DataFrames, which are two-dimensional array-like data tables in which each column contains values of one variable and each row contains one set of values from each column. Data stored in a DataFrame can be of numeric, factor, or character types. Pandas DataFrames are also thought of as a dictionary or collection of series objects.
+        </p>
+    
+        <!-- Add more content about how Pandas works -->
+    
+        <h2>Benefits of Pandas</h2>
+        <p>
+            Again according to the Python Package Index organizers, Pandas delivers several key benefits to data scientists and developers alike, including:
+        </p>
+        <!-- Add more content about benefits of Pandas -->
+    
+        <h2>Python and Pandas</h2>
+        <p>
+            Given that Pandas is built on top of the Python programming language, a brief review of the Python programming language is in order.
+        </p>
+        <!-- Add more content about Python and Pandas -->
+    
+        <h2>Pandas and Data Scientists</h2>
+        <p>
+            Pandas addresses the many shortcomings that data scientists often encounter when using languages associated with scientific and business research environments. In data science, working with data is usually sub-divided into multiple stages, including the aforementioned munging and data cleaning; analysis and modeling of data; and organizing the analysis into a form agreeable for plotting or display in tabular form. For these and other mission-critical data science tasks, Pandas excels.
+        </p>
+        <!-- Add more content about Pandas and Data Scientists -->
+    
+        <h2>GPU-Accelerated DataFrames</h2>
+        <p>
+            A CPU consists of a few cores, optimized for sequential serial processing, whereas a GPU has a massively parallel architecture consisting of thousands of smaller, more efficient cores designed for handling multiple tasks simultaneously. GPUs are capable of processing data much faster than configurations containing CPUs alone. They’re also popular for their extraordinarily low price per flop (performance) and are addressing the compute performance bottleneck today by speeding up multi-core servers for parallel processing.
+        </p>
+        <!-- Add more content about GPU-Accelerated DataFrames -->
+    
+   
+
+    </div>
+</body>
+</html>
+{% endblock %}

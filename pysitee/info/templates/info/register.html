@@ -1,0 +1,42 @@
+{% extends 'info/layout.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'info/css/info.css' %}">
+{% endblock %}
+
+{% block content %}
+<form action="{% url 'info:register' %}" method="post">
+    {% csrf_token %}
+    <div class="wrapper">
+        <div class="left">
+            <h3>Rocket Station</h3>   
+            <img src="https://i.imgur.com/eN4AKys.png" alt="Rocket_image">
+        </div>
+        <div class="right">
+            <div class="tabs">
+                <ul>
+                    <li class="register_li">Register</li>
+                </ul>
+            </div>
+            <div class="register">
+                <div class="input_field">
+                    <input type="text" name="username" id="username" placeholder="Логин" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="password" name="password1" id="password1" placeholder="Пароль" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="password" name="password2" id="password2" placeholder="Повтор пароля" class="input">
+                </div>
+                <input type="submit" value="Register" class="input"><br>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
+
+

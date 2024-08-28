@@ -1,0 +1,109 @@
+.left-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    background-color: white; /* Background color of the navigation bar */
+    background: #fff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color: #fff; /* Text color */
+  }
+   
+   .left-nav nav {
+     padding-top: 20px; /* Add some padding to separate links from the top */
+     background: #6b6b6b;
+     color: white;
+   }
+   
+   .left-nav a {
+     display: block;
+     padding: 10px 20px; /* Padding for each link */
+     color: #2c2a2a; /* Text color */
+     text-decoration: none; /* Remove underlines from links */
+   }
+   
+   .left-nav a:hover {
+     background-color: black; /* Background color on hover */
+   }
+   
+   .section-container {
+     margin-left: 200px; /* Adjust margin to make space for the left navigation bar */
+   }
+   nav a:hover {
+    background-color: #ce7a8a; /* Background color on hover */
+    color: white; /* Text color on hover */
+    text-decoration: none;
+    padding: 20px 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ce7a8a;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+img{
+  mix-blend-mode:multiply;
+  display: block;
+  margin-left: 300px;
+  position: relative;
+  width: 30%;
+  height:30%;
+}
+body{
+  background: #ffff;
+}
+h1, h2 {
+  color: black; /* White text color */
+  font-family: fantasy; /* Font family */
+  font-size: 400%; /* Font size */
+  margin-left:340px;
+  margin-top:-255px;
+}
+h3 {
+text-align: justify;
+margin-left: 530px;
+margin-top: 160px;
+font-family: Arial, sans-serif;
+font-size: 350%;
+}
+.container {
+width: 1500px; /* Set the width of the container to 1000 pixels */
+background-color: #ffff;
+padding: 50px;
+border-radius: 15px;
+position: relative;
+top: 80px;
+}
+p {
+text-align: justify;
+font-family: Arial, sanserif;
+position: absolute;
+top: 75%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
